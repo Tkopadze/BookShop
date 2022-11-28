@@ -1,21 +1,92 @@
 .navClass{
     width:100%;
     height:100px;
-    background-color: blue;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     
 }
-.header{
+.body{
+  background-color:rgb(223, 241, 120);
+  display: flex;
+  flex-direction: column;
+}
+.orderPg{
+
+  text-align: center;
+}
+
+.header,.headerClass , .h1Class{
     width: 100%;
     height: 200px;
-    border: 3px solid black;
+    background-color: rgb(196, 185, 124);
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.mainPg{
+  width: 100%;
+  height:100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.inputDiv{
+  width: 50%;
+  height: 230px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+
+}
+.inputLab{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 282px;
+}
+.radioDiv{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+width:300px;
+margin-top: 50px;
+
+}
+.checkbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;
+  width: 250px;
+}
+.checkDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 650px;
+  margin-top: 70px;
+  height: 100px;
+  border: 3px blueviolet solid;
+}
+.button{
+background-color: greenyellow;
+border: 2px solid;
+color:black;
+border-radius: 7px;
+margin-top: 70px;
+width: 150px;
+height: 30px;
 }
 .shoppingCartClass{
     width:100px;
     height:100px;
-    background-image: url(./images/free-shopping-cart-icon-3045-thumb.png);
+    background-image: url(../images/free-shopping-cart-icon-3045-thumb.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -54,12 +125,14 @@
    
 }
 .dropLocationClass{
-width: 100%;
-height:90%;
-background-image: url(./images);
-display: flex;
+width: 20%;
+height:100%;
+background-color: rgb(95, 75, 44);
+display: none;
 flex-direction: column;
 flex-wrap: wrap;
+overflow: scroll;
+
 
 
 }
@@ -100,18 +173,18 @@ flex-wrap: wrap;
 .showMoreAncClass{
   background-color: aliceblue;
 }
-.showMoreAncClass:hover{
+.showMoreAncClass:hover, .button:hover{
 border-radius: 4px;
 cursor: pointer;
 color:green;
 }
-.addToBagBtnClass{
+.addToBagBtnClass, .buyClass{
     background-color: blanchedalmond;
     width:100px;
     height: 30px;
     color:black;
 }
-.addToBagBtnClass:hover{
+.addToBagBtnClass:hover, .buyClass:hover{
     background-color: yellow;
     border: 1px solid #65b5f6;
   border-radius: 4px;
@@ -188,3 +261,5 @@ color:green;
     from {opacity: 0;}
     to {opacity:1 ;}
   } */
+
+  

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../mainPage/bookShop.css">
+</head>
+<body class="body">
+    <header class="header">
+        <h1>book shop</h1>
+        </header>
+        <form class="mainPg">
+            
+            <h2 class="orderPg">Deliver Your Order To</h2>
+            <div class="inputDiv">
+                <div class="inputLab">
+                    <label for="name" >name</label><br>
+                    <input type="text" id="name" minlength="4" required pattern="^[a-zA-Z0-9]*$" placeholder="name"/>
+                </div>
+                <div class="inputLab">
+                    <label for="Surname">Surname</label><br>
+                    <input type="text" id="Surname" minlength="5" pattern="^[a-zA-Z0-9]*$" placeholder="Surname"/>
+                </div>
+                <div class="inputLab">
+                    <label for="DeliveryDate">Delivery date</label><br>
+                    <input type="date" id="DeliveryDate"   placeholder="Delivery date"/>
+                </div>
+                <div class="inputLab">
+                    <label for="Street">Street</label><br>
+                    <input type="text" id="Street" minlength="5"  placeholder="Street"/>
+                </div>
+                <div class="inputLab">
+                    <label for="HouseNumber">House number</label><br>
+                    <input type="number" id="HouseNumber"  min="0" minlength="4" required  placeholder="House number"/>
+                </div>
+                <div class="inputLab">
+                    <label for="FlatNumber">Flat number</label><br>
+                    <input type="text" pattern="[^0-9-]" id="FlatNumber"  required  placeholder="Flat number"/>
+                </div>        
+            </div>
+            <div class="radioDiv">
+                <label for="Cash">Cash</label><br>
+                <input type="radio" id="Cash" name="exclude" >
+                <label for="Card">Card</label><br>
+                <input type="radio" id="Card" name="exclude">
+            </div>
+            <div class="checkDiv">
+                <div class="checkbox">
+                <label for="gift">pack as a gift</label><br>
+                <input type="checkbox" class="gift" id="gift">
+            </div>
+            
+            <div class="checkbox">
+                <label for="addPostcard">add postcard</label><br>
+                <input type="checkbox" class="addPostcard" id="addPostcard">
+            </div>
+            
+            <div class="checkbox">
+                <label for="discount">provide 2% discount to the next time</label><br>
+                <input type="checkbox" class="discount" id="discount">
+            </div>
+            
+            <div class="checkbox">
+                <label for="pen">branded pen or pencil</label><br>
+                <input type="checkbox" class="pen" id="pen">
+            </div>
+        </div>
+            
+        <button class="button" type="submit">complete</button>
+    </form>
+<script src="./index.js"></script>
+</body>
+</html>
