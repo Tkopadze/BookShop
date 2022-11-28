@@ -37,7 +37,7 @@ let buy=document.createElement("a");
 buy.className="buyClass";
 buy.innerText="complete";
 dropLocation.append(buy);
-buy.href="../formPage/index.html";
+buy.href="./index.html";
 
 
 const  books = fetch('./books.json') //path to the file with json data
