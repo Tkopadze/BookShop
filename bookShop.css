@@ -1,0 +1,265 @@
+.navClass{
+    width:100%;
+    height:100px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    
+}
+.body{
+  background-color:rgb(223, 241, 120);
+  display: flex;
+  flex-direction: column;
+}
+.orderPg{
+
+  text-align: center;
+}
+
+.header,.headerClass , .h1Class{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(196, 185, 124);
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.mainPg{
+  width: 100%;
+  height:100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.inputDiv{
+  width: 50%;
+  height: 230px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+
+}
+.inputLab{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 282px;
+}
+.radioDiv{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+width:300px;
+margin-top: 50px;
+
+}
+.checkbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;
+  width: 250px;
+}
+.checkDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 650px;
+  margin-top: 70px;
+  height: 100px;
+  border: 3px blueviolet solid;
+}
+.button{
+background-color: greenyellow;
+border: 2px solid;
+color:black;
+border-radius: 7px;
+margin-top: 70px;
+width: 150px;
+height: 30px;
+}
+.shoppingCartClass{
+    width:100px;
+    height:100px;
+    background-image: url(./images/free-shopping-cart-icon-3045-thumb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.booksCartClass{
+    color: red;
+    font-size: 30px;
+    font-weight: 900;
+    z-index: 50 ;
+    margin:0px;
+    background-color: white;
+    border-radius: 50%;
+    size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height:30px;
+}
+.mainClass{
+    height: 100vh;
+    width: 100vw;
+}
+.cardWrapClass{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border:2px solid black;
+    flex-wrap:wrap;
+    height: max-content;
+    width: 100vw;
+
+
+   
+}
+.dropLocationClass{
+width: 20%;
+height:100%;
+background-color: rgb(95, 75, 44);
+display: none;
+flex-direction: column;
+flex-wrap: wrap;
+overflow: scroll;
+
+
+
+}
+.mainDivClass{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    height: 24%;
+    border:black 2px solid; 
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.photoClass{
+    width:50%;
+    
+
+}
+.infoDivClass{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 50%;
+    height: 100%;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+.buttonWrapClass{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    width:100%;
+    height:50px;
+}
+.showMoreAncClass{
+  background-color: aliceblue;
+}
+.showMoreAncClass:hover, .button:hover{
+border-radius: 4px;
+cursor: pointer;
+color:green;
+}
+.addToBagBtnClass, .buyClass{
+    background-color: blanchedalmond;
+    width:100px;
+    height: 30px;
+    color:black;
+}
+.addToBagBtnClass:hover, .buyClass:hover{
+    background-color: yellow;
+    border: 1px solid #65b5f6;
+  border-radius: 4px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+.popupClass {
+    position: absolute;
+    width: 100vw;
+    height: 300vh;
+    top: 0;
+    bottom: 0;
+    background-color:rgba(238, 96, 96, 0.322);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupDivClass{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  position: fixed;
+  bottom: 200px;
+  width: 600px;
+  height: 400px;
+  z-index: 100;
+  align-self: center;
+}
+.popupPhotoClass{
+  width:300px;
+  height:400px;
+  background-repeat: no-repeat;
+}
+
+  /* .popupClass .popuptextClass {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  .popupClass .popuptextClass::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  } */
+
+  
