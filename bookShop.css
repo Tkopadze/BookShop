@@ -86,7 +86,7 @@ height: 30px;
 .shoppingCartClass{
     width:100px;
     height:100px;
-    background-image: url(../images/free-shopping-cart-icon-3045-thumb.png);
+    background-image: url(./images/free-shopping-cart-icon-3045-thumb.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
